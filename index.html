@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Anniversaire 5 ans de Saadi – samedi 21 novembre 2026</title>
+<meta name="description" content="Anniversaire sportif de Saadi au stade Ernest Wallon, samedi 21 novembre 2026 à 15h15, porte 14.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🏉%3C/text%3E%3C/svg%3E">
+<style>
+:root{
+  --pelouse:#2c7a46;
+  --pelouse-fonce:#1f5c34;
+  --rouge:#c8102e;
+  --encre:#171214;
+  --craie:#ffffff;
+  --papier:#f3f6f1;
+  --texte:#24201f;
+  --f:"Trebuchet MS","Segoe UI",system-ui,-apple-system,Helvetica,Arial,sans-serif;
+}
+@media (prefers-color-scheme:dark){
+  :root{--papier:#141a15;--texte:#eef2ec;}
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:var(--f);background:var(--papier);color:var(--texte);line-height:1.6;font-size:1.08rem}
+a{color:var(--rouge)}
+a:focus-visible,iframe:focus-visible{outline:3px solid var(--rouge);outline-offset:3px}
+.wrap{max-width:46rem;margin:0 auto;padding:0 1.25rem}
+
+/* Hero : un terrain de rugby vu du dessus */
+.hero{
+  position:relative;overflow:hidden;color:var(--craie);text-align:center;
+  background:
+    repeating-linear-gradient(90deg,var(--pelouse) 0 12.5%,var(--pelouse-fonce) 12.5% 25%);
+  padding:3.5rem 1.25rem 7rem;
+}
+.hero svg.lignes{position:absolute;inset:0;width:100%;height:100%;opacity:.55}
+.hero > *:not(svg.lignes){position:relative}
+.ballon{width:min(15rem,55vw);height:auto;display:block;margin:0 auto 1rem;transform:rotate(-14deg);filter:drop-shadow(0 .6rem .5rem rgba(0,0,0,.35))}
+.hero p.inv{margin:0;font-size:1.15rem;letter-spacing:.02em}
+.hero h1{margin:.2rem 0 0;font-size:clamp(2.6rem,10vw,5.2rem);line-height:1;font-weight:900;text-shadow:0 3px 0 rgba(0,0,0,.25)}
+.hero h1 span{display:block;font-size:.5em;margin-top:.25em}
+.date{
+  display:inline-block;margin-top:1.6rem;background:var(--craie);color:var(--encre);
+  padding:.7rem 1.4rem;border-radius:.4rem;font-weight:800;font-size:1.15rem;
+  border-left:.7rem solid var(--rouge);transform:rotate(-1.5deg);
+}
+.date small{display:block;font-weight:600;font-size:.85rem;color:#5b5254}
+.vague{position:absolute;left:0;right:0;bottom:-1px;width:100%;height:3.5rem;display:block}
+.vague path{fill:var(--papier)}
+
+/* Contenu */
+main{padding:1rem 0 3rem}
+h2{font-size:1.7rem;margin:2.6rem 0 .8rem;line-height:1.2}
+.mot{font-size:1.15rem}
+.rassure{
+  display:flex;gap:1rem;align-items:flex-start;margin-top:1.5rem;padding:1.1rem 1.2rem;
+  background:var(--encre);color:#fff;border-radius:.6rem;
+}
+.rassure svg{flex:none;width:3.2rem;height:3.2rem}
+.rassure p{margin:0}
+
+/* Programme : une vraie suite d'étapes */
+.prog{list-style:none;margin:1.5rem 0 0;padding:0;position:relative}
+.prog::before{content:"";position:absolute;left:1.55rem;top:1.5rem;bottom:1.5rem;width:4px;background:repeating-linear-gradient(var(--rouge) 0 10px,transparent 10px 18px)}
+.prog li{position:relative;display:flex;gap:1rem;align-items:flex-start;margin-bottom:1.2rem}
+.prog .pastille{flex:none;width:3.2rem;height:3.2rem;border-radius:50%;background:var(--rouge);color:#fff;display:grid;place-items:center;border:4px solid var(--papier);z-index:1}
+.prog .pastille svg{width:1.6rem;height:1.6rem}
+.prog .bloc{flex:1;background:var(--craie);color:var(--encre);border-radius:.6rem;padding:.8rem 1.1rem;border-bottom:4px solid var(--pelouse)}
+.prog h3{margin:0;font-size:1.1rem}
+.prog .duree{font-weight:800;color:var(--rouge)}
+.prog .heures{font-size:.92rem;color:#5b5254}
+
+/* Infos pratiques */
+.lieu{background:var(--craie);color:var(--encre);border-radius:.6rem;padding:1.2rem 1.3rem;border-left:.7rem solid var(--rouge)}
+.lieu p{margin:.2rem 0}
+.carte{margin-top:1rem;border-radius:.6rem;overflow:hidden;border:4px solid var(--pelouse)}
+.carte iframe{display:block;width:100%;height:22rem;border:0}
+
+/* Contact */
+.tels{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:1rem}
+.tels a{
+  display:inline-flex;align-items:center;gap:.6rem;background:var(--encre);color:#fff;text-decoration:none;
+  padding:.8rem 1.2rem;border-radius:2rem;font-weight:700;font-size:1.1rem;
+}
+.tels a:hover{background:var(--rouge)}
+.tels svg{width:1.2rem;height:1.2rem}
+
+footer{background:var(--pelouse-fonce);color:#fff;text-align:center;padding:1.6rem 1rem;font-size:.95rem}
+
+@media (max-width:30rem){
+  body{font-size:1rem}
+  .carte iframe{height:18rem}
+  .prog::before{left:1.35rem}
+  .prog .pastille{width:2.8rem;height:2.8rem}
+}
+@media (prefers-reduced-motion:no-preference){
+  .ballon{animation:rebond 2.6s ease-in-out infinite}
+  @keyframes rebond{0%,100%{transform:rotate(-14deg) translateY(0)}50%{transform:rotate(-8deg) translateY(-.7rem)}}
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <!-- Lignes du terrain -->
+  <svg class="lignes" viewBox="0 0 800 500" preserveAspectRatio="none" aria-hidden="true">
+    <g fill="none" stroke="#fff" stroke-width="3">
+      <rect x="20" y="20" width="760" height="460"/>
+      <line x1="400" y1="20" x2="400" y2="480"/>
+      <line x1="160" y1="20" x2="160" y2="480" stroke-dasharray="14 12"/>
+      <line x1="640" y1="20" x2="640" y2="480" stroke-dasharray="14 12"/>
+      <circle cx="400" cy="250" r="50"/>
+    </g>
+  </svg>
+
+  <!-- Ballon de rugby -->
+  <svg class="ballon" viewBox="0 0 240 150" role="img" aria-label="Ballon de rugby">
+    <ellipse cx="120" cy="75" rx="112" ry="66" fill="#8a3b1c"/>
+    <ellipse cx="120" cy="72" rx="108" ry="62" fill="#b85a2e"/>
+    <path d="M58 24 C48 52 48 96 58 124" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round"/>
+    <path d="M182 24 C192 52 192 96 182 124" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round"/>
+    <g stroke="#fff" stroke-width="5" stroke-linecap="round">
+      <line x1="120" y1="40" x2="120" y2="104"/>
+      <line x1="102" y1="52" x2="138" y2="52"/>
+      <line x1="100" y1="66" x2="140" y2="66"/>
+      <line x1="100" y1="80" x2="140" y2="80"/>
+      <line x1="102" y1="94" x2="138" y2="94"/>
+    </g>
+    <ellipse cx="86" cy="42" rx="42" ry="10" fill="#fff" opacity=".18" transform="rotate(-20 86 42)"/>
+  </svg>
+
+  <p class="inv">Tu es invité à l'anniversaire de</p>
+  <h1>Saadi<span>5 ans !</span></h1>
+  <div class="date">Samedi 21 novembre 2026 · 15h15<small>Stade Ernest Wallon · porte 14</small></div>
+
+  <svg class="vague" viewBox="0 0 1200 60" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M0 60 L0 30 Q150 0 300 25 T600 25 T900 25 T1200 20 L1200 60 Z"/>
+  </svg>
+</header>
+
+<main>
+  <div class="wrap">
+
+    <p class="mot">
+      Merci à toutes et à tous de vous rendre disponibles pour l'anniversaire de Saadi.
+      Comme vous avez pu le deviner à cause de son lieu, le stade Ernest Wallon,
+      cet anniversaire sera <strong>sportif</strong> !
+    </p>
+
+    <h2>Au programme</h2>
+    <p>L'anniversaire débute à <strong>15h15</strong> à la <strong>porte 14</strong> et se découpe en 3 parties.</p>
+
+    <ol class="prog">
+      <li>
+        <span class="pastille" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 3v18M3 12h18" opacity=".0"/><path d="M8 12l3 3 5-6"/></svg>
+        </span>
+        <div class="bloc">
+          <h3>Découverte de la première activité</h3>
+          <span class="duree">1 h</span> <span class="heures">· de 15h15 à 16h15</span>
+        </div>
+      </li>
+      <li>
+        <span class="pastille" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v3M8 5l1 2M16 5l-1 2"/><path d="M5 21v-8a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v8z"/><path d="M5 16c2 1.5 3 1.5 5 0s3-1.5 5 0 3 1.5 4 .5"/></svg>
+        </span>
+        <div class="bloc">
+          <h3>Le goûter et l'ouverture des cadeaux</h3>
+          <span class="duree">30 min</span> <span class="heures">· de 16h15 à 16h45</span>
+        </div>
+      </li>
+      <li>
+        <span class="pastille" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/></svg>
+        </span>
+        <div class="bloc">
+          <h3>Découverte de la deuxième activité</h3>
+          <span class="duree">1 h</span> <span class="heures">· de 16h45 à 17h45</span>
+        </div>
+      </li>
+    </ol>
+
+    <div class="rassure">
+      <svg viewBox="0 0 48 48" aria-hidden="true">
+        <path d="M24 4l16 6v12c0 11-7 18-16 22C15 40 8 33 8 22V10z" fill="#c8102e"/>
+        <path d="M16 24l6 6 11-12" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <p>
+        L'organisme qui s'occupe de l'événement est rattaché au Stade Toulousain
+        (<a href="https://academie.stadetoulousain.fr/fr/5-kidz-ac" style="color:#ff8a9b">Kidz'Ac</a>).
+        Pour autant, je vous rassure : vos petits ne vont pas se prendre des plaquages par un 3<sup>e</sup> ligne.
+        Malheureusement, pour les amateurs et amatrices de rugby, les joueurs du Stade Toulousain
+        ne sont pas compris dans la prestation. J'espère que cela ne découragera pas certains d'entre vous à venir.
+      </p>
+    </div>
+
+    <h2>Où nous retrouver</h2>
+    <div class="lieu">
+      <p><strong>Stade Ernest Wallon</strong> – rendez-vous à la <strong>porte 14</strong></p>
+      <p>Samedi 21 novembre 2026 à 15h15</p>
+    </div>
+    <div class="carte">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d607.1874083472279!2d1.4155105925132954!3d43.621398821945185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12aebb302b9b2983%3A0xbc40aff74f32be73!2sKidZ'Ac!5e0!3m2!1sfr!2sfr!4v1794934125286!5m2!1sfr!2sfr"
+        title="Plan d'accès au stade Ernest Wallon" allowfullscreen loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+    </div>
+
+    <h2>Pour nous contacter</h2>
+    <p>Un doute, un retard, une question ? Appelez-nous :</p>
+    <div class="tels">
+      <a href="tel:+33744423813">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11 11 0 0 0 3.6.6 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.6 3.6a1 1 0 0 1-.25 1z"/></svg>
+        07 44 42 38 13
+      </a>
+      <a href="tel:+33643325228">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11 11 0 0 0 3.6.6 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.6 3.6a1 1 0 0 1-.25 1z"/></svg>
+        06 43 32 52 28
+      </a>
+    </div>
+
+  </div>
+</main>
+
+<footer>À samedi pour fêter les 5 ans de Saadi !</footer>
+
+</body>
+</html>
